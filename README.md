@@ -9,5 +9,5 @@ and run:
 
 ```sh
 sudo apt update
-sudo apt install texlive latexmk
+sudo apt install texlive-full latexmk
 ```
