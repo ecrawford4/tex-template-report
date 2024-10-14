@@ -9,5 +9,8 @@ and run:
 
 ```sh
 sudo apt update
-sudo apt install texlive-full latexmk
+sudo apt install texlive texlive-latex-extra latexmk
 ```
+
+<!-- sudo tlmgr install enumitem fancyhdr cprotect listings xcolor amsmath amssymb graphicx subfigure hyperref geometry -->
+
