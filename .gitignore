@@ -1,0 +1,6 @@
+# ignore latex build files
+*.aux
+*.log
+*.out
+*.fdb_latexmk
+*.synctex.gz
