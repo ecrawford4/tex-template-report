@@ -1,0 +1,18 @@
+# ignore latex build files
+*.aux
+*.log
+*.out
+*.fdb_latexmk
+*.synctex.gz
+*.fls
+*.cpt
+*.snm
+*.nav
+*.toc
+
+# ignore bibtex build files
+*.vrb
+*.bbl
+*.blg
+*.bcf
+*.run.xml
