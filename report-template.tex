@@ -147,22 +147,31 @@ You can also use \texttt{cprotect} to include special characters or commands in 
 \section{Example of \texorpdfstring{\texttt{xcolor}}{xcolor} Usage in Code Listings}
 
 \begin{lstlisting}[language=TeX]
-\documentclass{article}
-\usepackage{xcolor}
-
-\begin{document}
-
-% Using xcolor to change text color
-\textcolor{red}{This text is red.}
-
-% Using xcolor to highlight text
-\colorbox{yellow}{This text has a yellow background.}
-
-% Using xcolor to define custom colors
-\definecolor{myblue}{RGB}{0, 0, 255}
-\textcolor{myblue}{This text is custom blue.}
-
-\end{document}
+    \definecolor{codegreen}{rgb}{0,0.6,0}
+    \definecolor{codegray}{rgb}{0.5,0.5,0.5}
+    \definecolor{codepurple}{rgb}{0.58,0,0.82}
+    \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+    
+    \lstdefinestyle{mystyle}{
+        backgroundcolor=\color{backcolour},   
+        commentstyle=\color{codegreen},
+        keywordstyle=\color{magenta},
+        numberstyle=\tiny\color{codegray},
+        stringstyle=\color{codepurple},
+        basicstyle=\ttfamily\footnotesize,
+        breakatwhitespace=false,         
+        breaklines=true,                 
+        captionpos=b,                    
+        keepspaces=true,                 
+        numbers=left,                    
+        numbersep=5pt,                  
+        showspaces=false,                
+        showstringspaces=false,
+        showtabs=false,                  
+        tabsize=2
+    }
+    
+    \lstset{style=mystyle} 
 \end{lstlisting}
 
 \vspace{5mm}\textit{c.}
