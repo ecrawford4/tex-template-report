@@ -1,10 +1,19 @@
 \documentclass[]{article}
 
 \usepackage{pdfpages,enumitem,fancyhdr,
-            cprotect,listings,xcolor,
-            amsmath,amssymb,graphicx,
-            subfigure,hyperref}
+cprotect,listings,xcolor,
+amsmath,amssymb,graphicx,
+subfigure,hyperref}
 \usepackage[includeheadfoot,margin=1.15in]{geometry}
+
+%  Define these variables:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\yourTitle}{[ Title ]}              %
+\newcommand{\yourName}{[ Your Name ]}           %
+\newcommand{\yourEmail}{[ your@email ]}         %
+\newcommand{\classCode}{[ Class Code ]}         %
+\newcommand{\num}{[ Lab or Homework Number ]}   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -32,13 +41,15 @@
 
 \lstset{style=mystyle} 
 
+
 \fancyhf{}
-\lhead{[ Your Name ] | [ Your Email ]}
-\rhead{[ Class Code ] | \today \space | [Lab or Homework Number]}
+\lhead{\yourName \space | \yourEmail}
+\rhead{\classCode \space | \today \space | \num}
 \cfoot{\thepage}
 \renewcommand{\headrulewidth}{1.15pt}
 \renewcommand{\footrulewidth}{1.15pt}
 \pagestyle{fancy}
+
 
 \begin{document}
 
@@ -53,11 +64,11 @@
 
     % Title
     \vspace{.7\baselineskip}
-    {\huge \textbf{[ Title ]}}
+    {\huge \textbf{\yourTitle}}
 
     % Subtitle
     \vspace*{.5cm}
-    {\Large [ Class Code ]}
+    {\Large \classCode}
     
     % Closing rule.
     \rule{.7\textwidth}{1pt}
@@ -70,8 +81,8 @@
     \begin{figure}[!ht]
         \large
         \centering
-        [ Your Name ] \\
-        {\normalsize \url{[your@email]}}
+        \yourName \\
+        {\normalsize \url{\yourEmail}} \\
     \end{figure}
 
     % More authors can be inserted here with additional figures.
