@@ -7,7 +7,7 @@
 \usepackage[includeheadfoot,margin=1.15in]{geometry}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  Define these variables:  %%%%%%%%%%%%%%%%%%%%%
+%%%  Define these variables:  %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\yourTitle}{[ Title ]}            %%%
 \newcommand{\yourName}{[ Your Name ]}         %%%
@@ -24,14 +24,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  Setup:  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% define colors for code listings
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
+% define the style for code listings
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},   
     commentstyle=\color{codegreen},
@@ -53,7 +55,7 @@
 
 \lstset{style=mystyle} 
 
-
+% fancyhdr package settings
 \fancyhf{}
 \lhead{\yourName \space | \yourEmail}
 \rhead{\classCode \space | \today \space | \num}
@@ -61,7 +63,6 @@
 \renewcommand{\headrulewidth}{1.15pt}
 \renewcommand{\footrulewidth}{1.15pt}
 \pagestyle{fancy}
-
 
 \begin{document}
 
