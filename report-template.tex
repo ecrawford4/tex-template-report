@@ -1,18 +1,30 @@
 \documentclass[]{article}
 
 \usepackage{pdfpages,enumitem,fancyhdr,
-cprotect,listings,xcolor,
-amsmath,amssymb,graphicx,
-subfigure,hyperref,float}
+            cprotect,listings,xcolor,
+            amsmath,amssymb,graphicx,
+            subfigure,hyperref,float}
 \usepackage[includeheadfoot,margin=1.15in]{geometry}
 
-%  Define these variables:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\yourTitle}{[ Title ]}              %
-\newcommand{\yourName}{[ Your Name ]}           %
-\newcommand{\yourEmail}{[ your@email ]}         %
-\newcommand{\classCode}{[ Class Code ]}         %
-\newcommand{\num}{[ Lab or Homework Number ]}   %
+%  Define these variables:  %%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\yourTitle}{[ Title ]}            %%%
+\newcommand{\yourName}{[ Your Name ]}         %%%
+\newcommand{\yourEmail}{[ your@email ]}       %%%
+\newcommand{\classCode}{[ Class Code ]}       %%%
+\newcommand{\num}{[ Lab or Homework Number ]} %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -85,7 +97,7 @@ subfigure,hyperref,float}
         {\normalsize \url{\yourEmail}} \\
     \end{figure}
 
-    % More authors can be inserted here with additional figures.
+    % More authors can be inserted here with additional figures or subfigures.
 
     \vspace{3cm}
 
@@ -105,6 +117,18 @@ subfigure,hyperref,float}
     \rule{.7\textwidth}{1pt}
 
 \end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  Edit the body:  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent\textbf{1:}
 
@@ -303,20 +327,42 @@ Here is a link to \hyperref[fig:example]{Figure 1}.
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.5\textwidth]{assets/example-image.jpg}
+    \includegraphics[width=0.3\textwidth]{assets/example-image.jpg}
     \caption{Example image}
     \label{fig:example}
 \end{figure}
-
+\pagebreak
 \section{Example of \texttt{graphicx} Package Usage}
 
-The \texttt{graphicx} package allows you to include images in your document. Here is an example:
+The \texttt{graphicx} package allows you to modify images in your document. Here is an example:
 
-\begin{figure}[!ht]
+\begin{lstlisting}[language=TeX]
+\includegraphics[scale = 0.3, angle = 60, clip = true]{assets/example-image.jpg}
+\end{lstlisting}
+
+\includegraphics[scale = 0.3, angle = 60, clip = true]{assets/example-image.jpg}
+
+
+\section{Example of \texttt{float} Package Usage}
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{assets/example-image.jpg}
-    \caption{Example image included using the \texttt{graphicx} package}
+    \caption{Example image included using [H] provided in the \texttt{float} package}
     \label{fig:graphicx-example}
 \end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
